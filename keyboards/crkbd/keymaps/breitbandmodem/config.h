@@ -59,8 +59,8 @@ enum corne_layers {
 #define CTL_SCLN RCTL_T(KC_SCLN)
 
 // _LOWER
-#define SFT_LBRC RSFT_T(KC_LBRC)
-#define GUI_RBRC RGUI_T(KC_RBRC)
+#define SFT_RBRC RSFT_T(KC_RBRC)
+#define GUI_LBRC RGUI_T(KC_LBRC)
 #define ALT_MINS LALT_T(KC_MINS)
 #define CTL_EQL CTL_T(KC_EQL)
 
