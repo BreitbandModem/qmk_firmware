@@ -23,10 +23,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define USE_MATRIX_I2C
 
 /* Select hand configuration */
-
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
+
+#define USE_SERIAL_PD2
+
+// milliseconds to differentiate between tab and hold
+#define TAPPING_TERM 200 // default 200
+
+// prevent normal rollover of alphas from accedentally triggering mods
+// #define IGNORE_MOD_TAP_INTERRUPT
+
+// Apply the modifier on keys that are tapped during a short hold of a modtap
+#define PERMISSIVE_HOLD
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+// you may change this to a "TAPPING_FORCE_HOLD_PER_KEY" option
+#define TAPPING_FORCE_HOLD
 
 enum corne_layers {
   _QWERTY,
@@ -74,11 +88,6 @@ enum corne_layers {
 #define SFT_TAB LSFT_T(KC_TAB)
 
 #define GUI_F12 RGUI_T(KC_F12)
-
-#define USE_SERIAL_PD2
-
-#define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 100
 
 #ifdef RGBLIGHT_ENABLE
     #undef RGBLED_NUM
