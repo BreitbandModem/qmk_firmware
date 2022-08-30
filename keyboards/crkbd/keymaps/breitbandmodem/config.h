@@ -42,17 +42,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // you may change this to a "TAPPING_FORCE_HOLD_PER_KEY" option
 #define TAPPING_FORCE_HOLD
 
+#ifndef __ASSEMBLER__
 enum corne_layers {
   _QWERTY,
   _LOWER,
   _RAISE,
   _NAV,
-  _ADJUST
 };
+#endif
 
 // layers
 
-#define ADJUST MO(_ADJUST)
 #define LSPACE LT(_LOWER, KC_SPACE)
 #define RSPACE LT(_LOWER, KC_SPACE)
 #define MBSPC LT(_RAISE, KC_BSPC)
