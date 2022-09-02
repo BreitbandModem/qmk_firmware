@@ -27,6 +27,7 @@ brew install --cask qmk-toolbox
 # Compile Firmware
 
 ``` bash
+qmk clean --all
 qmk compile
 
 # For specific keyboard / keymap
