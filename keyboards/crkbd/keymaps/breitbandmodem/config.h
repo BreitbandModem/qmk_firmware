@@ -32,6 +32,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // milliseconds to differentiate between tab and hold
 #define TAPPING_TERM 200 // default 200
 
+// Don't trigger the MOD if key is released within TAPPING_TERM
+#define IGNORE_MOD_TAP_INTERRUPT
+
 // prevent normal rollover of alphas from accedentally triggering mods
 // #define IGNORE_MOD_TAP_INTERRUPT
 
@@ -40,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 // you may change this to a "TAPPING_FORCE_HOLD_PER_KEY" option
-#define TAPPING_FORCE_HOLD
+// #define TAPPING_FORCE_HOLD
 
 #ifndef __ASSEMBLER__
 enum corne_layers {
