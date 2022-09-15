@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL_PD2
 
 // milliseconds to differentiate between tab and hold
-#define TAPPING_TERM 200 // default 200
+#define TAPPING_TERM 100 // default 200
 
 // Don't trigger the MOD if key is released within TAPPING_TERM
 #define IGNORE_MOD_TAP_INTERRUPT
